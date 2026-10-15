@@ -1,6 +1,6 @@
 # 📡 Telco Customer Churn Prediction
 
-[![CI Pipeline](https://github.com/Yahya-osama-mohmamed/telco-churn-prediction/actions/workflows/ci.yml/badge.svg)](https://github.com/Yahya-osama-mohmamed/telco-churn-prediction/actions/workflows/ci.yml)
+[![CI Pipeline](https://github.com/pristine2207/telco-churn-prediction/actions/workflows/ci.yml/badge.svg)](https://github.com/pristine2207/telco-churn-prediction/actions/workflows/ci.yml)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -256,13 +256,13 @@ The project is configured for seamless deployment on **Render**.
 
 ## 🚢 Deployment
 
-[![CI](https://github.com/Yahya-osama-mohmamed/telco-churn-prediction/actions/workflows/ci.yml/badge.svg)](https://github.com/Yahya-osama-mohmamed/telco-churn-prediction/actions/workflows/ci.yml)
-[![Publish container](https://github.com/Yahya-osama-mohmamed/telco-churn-prediction/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/Yahya-osama-mohmamed/telco-churn-prediction/actions/workflows/docker-publish.yml)
+[![CI](https://github.com/pristine2207/telco-churn-prediction/actions/workflows/ci.yml/badge.svg)](https://github.com/pristine2207/telco-churn-prediction/actions/workflows/ci.yml)
+[![Publish container](https://github.com/pristine2207/telco-churn-prediction/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/pristine2207/telco-churn-prediction/actions/workflows/docker-publish.yml)
 
 The published image is self-contained — model included — so this is all it takes:
 
 ```bash
-docker run -p 8000:8000 ghcr.io/yahya-osama-mohmamed/telco-churn-api:latest
+docker run -p 8000:8000 ghcr.io/pristine2207/telco-churn-api:latest
 curl http://localhost:8000/health
 ```
 
@@ -283,7 +283,7 @@ The quality gate is the part worth pointing at: a retrain that quietly degrades
 still runs, still passes the tests, and would still build — the gate is what
 stops it reaching an image.
 
-**Model artifacts** live in the [`models-v1` release](https://github.com/Yahya-osama-mohmamed/telco-churn-prediction/releases/tag/models-v1),
+**Model artifacts** live in the [`models-v1` release](https://github.com/pristine2207/telco-churn-prediction/releases/tag/models-v1),
 not in git. CI fetches them before the tests and before the image build, so the
 binaries stay versioned and immutable without bloating the repository history.
 
